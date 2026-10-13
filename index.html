@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Habiba Zahid | AI Engineer Portfolio</title>
+  <meta name="description" content="Habiba Zahid – AI Engineer, AI agents & automation developer and frontend developer. Computer Science student at IU International University of Applied Sciences.">
+  <meta name="theme-color" content="#3b63f2">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%233b63f2'/%3E%3Ctext x='16' y='22.5' font-family='Arial' font-weight='700' font-size='17' text-anchor='middle' fill='white'%3EHZ%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    document.documentElement.classList.add('js');
+    try { var t = localStorage.getItem('theme'); if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+</head>
+<body>
+
+<!-- SVG icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+    <symbol id="i-medal" viewBox="0 0 24 24"><path d="M7 3l5 8 5-8"/><circle cx="12" cy="15.5" r="4.5"/><circle cx="12" cy="15.5" r="1.3"/></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M8 4h8v5a4 4 0 0 1-8 0V4z"/><path d="M8 6H5a2 2 0 0 0 0 4h3M16 6h3a2 2 0 0 1 0 4h-3M12 13v4M8.5 20h7M10 17h4v3h-4z"/></symbol>
+    <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M6 3.5h12v17l-6-4.2-6 4.2z"/><path d="M6 8h12"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.8 3 2.8 15 0 18M12 3c-2.8 3-2.8 15 0 18"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9zM18.5 16l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.8a3.5 3.5 0 0 1 0 6.4M18 14.2a6.5 6.5 0 0 1 3.5 5.8"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M8.5 21h7"/></symbol>
+    <symbol id="i-window" viewBox="0 0 24 24"><rect x="2.5" y="4" width="19" height="16" rx="1.5"/><path d="M2.5 8h19M5 6h.01M7 6h.01M9 6h.01M5.5 11.5h5v6h-5zM13 11.5h6M13 14.5h6M13 17.5h6"/></symbol>
+    <symbol id="i-agent" viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="12" rx="3"/><path d="M12 3v4M9 12.5h.01M15 12.5h.01M9.5 16h5M2 12v3M22 12v3"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M13.5 5l-3 14"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 7l8.5 6.5L20.5 7"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5V16M8 7.8v.01M12 16v-5.5M12 13a2.5 2.5 0 0 1 5 0v3"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.500 2.800 5.400 3.100 5.400 3.100a4.200 4.200 0 0 0-.1 3.200A4.600 4.600 0 0 0 4 9.500c0 4.600 2.700 5.700 5.500 6-.6.600-.6 1.200-.5 2V21"/></symbol>
+  </defs>
+</svg>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- ====================== Header ====================== -->
+<header class="site-header" id="siteHeader">
+  <div class="container">
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav"><svg class="icon"><use href="#i-menu"/></svg></button>
+    <nav class="nav" id="mainNav" aria-label="Main">
+      <ul class="nav-list">
+        <li><a href="#home" data-nav="home" class="active">Home</a></li>
+        <li><a href="#portfolio" data-nav="portfolio">Portfolio</a></li>
+        <li><a href="#resume" data-nav="resume">Resume</a></li>
+        <li><a href="#about" data-nav="about">About</a></li>
+        <li><a href="#contact" data-nav="contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+      <svg class="icon moon"><use href="#i-moon"/></svg><svg class="icon sun"><use href="#i-sun"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+<!-- ====================== Hero ====================== -->
+<section class="hero" id="home" data-section="home">
+  <canvas id="heroCanvas" aria-hidden="true"></canvas>
+  <div class="hero-inner" id="heroInner">
+    <h1><span class="hero-line">Hello, I'm</span><strong class="hero-line">Habiba Zahid</strong></h1>
+    <p class="hero-sub hero-line"><span class="accent-bar"></span><span>AI Engineer</span><i>|</i><span>AI Agents &amp; Automation</span><i>|</i><span>Frontend Developer</span></p>
+    <div class="hero-actions hero-line">
+      <a class="btn btn-light" href="#portfolio">View My Work</a>
+      <a class="btn btn-ghost" href="#contact">Contact Me</a>
+    </div>
+  </div>
+  <a class="scroll-cue" href="#portfolio" aria-label="Scroll to portfolio"></a>
+</section>
+
+<!-- ====================== Tools (replaces "Trusted by") ====================== -->
+<section class="section" id="portfolio" data-section="portfolio" style="padding-bottom:0">
+  <div class="container">
+    <h2 class="section-title reveal">Tools I Build <strong>With</strong></h2>
+    <div class="brand-grid">
+      <div class="card brand c1 reveal"><span class="mark m-circle"></span>Agentic AI</div>
+      <div class="card brand c2 reveal" data-delay="1"><span class="mark m-square"></span>RAG &amp; LLMs</div>
+      <div class="card brand c3 reveal" data-delay="2"><span class="mark m-tri"></span>N8N</div>
+      <div class="card brand c4 reveal" data-delay="3"><span class="mark m-diamond"></span>React &amp; Next.js</div>
+      <div class="card brand c5 reveal"><span class="mark m-pill"></span>FastAPI</div>
+      <div class="card brand c6 reveal" data-delay="1"><span class="mark m-ring"></span>PostgreSQL</div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== Featured portfolio ====================== -->
+<section class="section" id="work" data-section="portfolio">
+  <div class="container">
+    <h2 class="section-title reveal">Featured <strong>Portfolio</strong></h2>
+
+    <div class="filters reveal" role="group" aria-label="Filter projects">
+      <button type="button" class="active" data-filter="all">All</button>
+      <button type="button" data-filter="agents">AI Agents</button>
+      <button type="button" data-filter="fullstack">Full-Stack</button>
+      <button type="button" data-filter="frontend">Frontend</button>
+      <button type="button" data-filter="database">Database</button>
+    </div>
+
+    <div class="work-grid" id="workGrid">
+      <a class="work reveal" data-cat="agents" href="#case-multi-agent">
+        <div class="cover" data-glyph="7" style="--c-bg:#2c3340;--c-fg:#eef1f6">
+          <span class="cv-top">Feb 2026</span>
+          <div><div class="cv-name">Multi-Agent Business System</div><div class="cv-tech">N8N · LLMs · RAG · Pinecone · Stripe · Gmail API</div></div>
+        </div>
+        <h3 class="work-title">Multi-Agent Autonomous Business System</h3>
+        <p class="work-cat">AI Agents</p>
+      </a>
+      <a class="work reveal" data-cat="agents" href="#case-pulse" data-delay="1">
+        <div class="cover" data-glyph="P" style="--c-bg:#dcdee2;--c-fg:#252a33">
+          <span class="cv-top">Jan 2025</span>
+          <div><div class="cv-name">PULSE Intelligence Agent</div><div class="cv-tech">N8N · LLMs · Web Scraping · Sheets · WhatsApp API</div></div>
+        </div>
+        <h3 class="work-title">PULSE Competitor Intelligence Agent</h3>
+        <p class="work-cat">AI Agents</p>
+      </a>
+      <a class="work reveal" data-cat="fullstack" href="https://edu-sphere-ddei.habibazahid.com" target="_blank" rel="noopener" data-delay="2">
+        <div class="cover" data-glyph="E" style="--c-bg:#e7d9a8;--c-fg:#3a3118">
+          <span class="cv-top">Apr 2025</span>
+          <div><div class="cv-name">EduSphere AI Platform</div><div class="cv-tech">React · FastAPI · RAG</div></div>
+        </div>
+        <h3 class="work-title">EduSphere AI EdTech Platform</h3>
+        <p class="work-cat">Full-Stack · <em>Live ↗</em></p>
+      </a>
+      <a class="work reveal" data-cat="fullstack" href="https://nexus-bms.habibazahid.com" target="_blank" rel="noopener">
+        <div class="cover" data-glyph="N" style="--c-bg:#1f2b44;--c-fg:#e8eefc">
+          <span class="cv-top">Jan 2025</span>
+          <div><div class="cv-name">Nexus Business Management</div><div class="cv-tech">React · Node.js · PostgreSQL · Redis</div></div>
+        </div>
+        <h3 class="work-title">Nexus Business Management System</h3>
+        <p class="work-cat">Full-Stack · <em>Live ↗</em></p>
+      </a>
+      <a class="work reveal" data-cat="frontend" href="https://dashboard.habibazahid.com" target="_blank" rel="noopener" data-delay="1">
+        <div class="cover" data-glyph="B" style="--c-bg:#f1e24a;--c-fg:#2a2705">
+          <span class="cv-top">Jan 2023</span>
+          <div><div class="cv-name">PulseBoard Analytics</div><div class="cv-tech">React · Chart.js · REST APIs</div></div>
+        </div>
+        <h3 class="work-title">PulseBoard Analytics Dashboard</h3>
+        <p class="work-cat">Frontend · <em>Live ↗</em></p>
+      </a>
+      <div class="work reveal" data-cat="database" data-delay="2">
+        <div class="cover" data-glyph="A" style="--c-bg:#cfd3d9;--c-fg:#232933">
+          <span class="cv-top">Feb 2023</span>
+          <div><div class="cv-name">Airbnb Data Mart</div><div class="cv-tech">MySQL · Oracle · ER Modelling</div></div>
+        </div>
+        <h3 class="work-title">Airbnb Data Mart</h3>
+        <p class="work-cat">Database</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== Case studies ====================== -->
+<section class="section" data-section="portfolio" style="padding-top:1rem">
+  <div class="container">
+    <h2 class="section-title reveal">Featured <strong>Case Studies</strong></h2>
+    <div class="case-grid">
+      <article class="card case reveal" id="case-multi-agent">
+        <div class="cover" data-glyph="7" style="--c-bg:#2c3340;--c-fg:#eef1f6"><span class="cv-top">Agentic AI</span><div class="cv-name">Multi-Agent Business System</div></div>
+        <div class="case-body">
+          <span class="eyebrow">AI Agents</span>
+          <h3>Multi-Agent Autonomous Business System</h3>
+          <p>Seven AI agents running on full autopilot, delivering weekly briefings on revenue, pipeline and risks.</p>
+          <div class="stats"><div class="stat"><b>7</b><span>AI agents</span></div><div class="stat"><b>Weekly</b><span>Briefings</span></div></div>
+          <a class="btn btn-outline" href="mailto:habibaazahid@gmail.com?subject=Multi-Agent%20Autonomous%20Business%20System">Ask About It</a>
+        </div>
+      </article>
+      <article class="card case reveal" id="case-pulse" data-delay="1">
+        <div class="cover" data-glyph="P" style="--c-bg:#dcdee2;--c-fg:#252a33"><span class="cv-top">Automation</span><div class="cv-name">PULSE Intelligence Agent</div></div>
+        <div class="case-body">
+          <span class="eyebrow">Automation</span>
+          <h3>PULSE Competitor Intelligence Agent</h3>
+          <p>Researches any company and autonomously delivers a full strategy report to WhatsApp and email.</p>
+          <div class="stats"><div class="stat"><b>Any</b><span>Company</span></div><div class="stat"><b>2</b><span>Channels</span></div></div>
+          <a class="btn btn-outline" href="mailto:habibaazahid@gmail.com?subject=PULSE%20Competitor%20Intelligence%20Agent">Ask About It</a>
+        </div>
+      </article>
+      <article class="card case reveal" data-delay="2">
+        <div class="cover" data-glyph="E" style="--c-bg:#e7d9a8;--c-fg:#3a3118"><span class="cv-top">Full-Stack</span><div class="cv-name">EduSphere AI Platform</div></div>
+        <div class="case-body">
+          <span class="eyebrow">Full-Stack · EdTech</span>
+          <h3>EduSphere AI EdTech Platform</h3>
+          <p>Aggregates courses, research papers and AI-generated quizzes in a single interface.</p>
+          <div class="stats"><div class="stat"><b>3</b><span>Content types</span></div><div class="stat"><b>Live</b><span>In production</span></div></div>
+          <a class="btn btn-outline" href="https://edu-sphere-ddei.habibazahid.com" target="_blank" rel="noopener">View Live Demo</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== Resume ====================== -->
+<section class="section alt" id="resume" data-section="resume">
+  <div class="container">
+    <h2 class="section-title reveal">My <strong>Resume</strong></h2>
+    <div class="resume-cols">
+      <div>
+        <h3 class="col-title reveal">Education &amp; Volunteering</h3>
+        <div class="timeline">
+          <article class="card entry reveal">
+            <div class="date"><svg class="icon"><use href="#i-cal"/></svg>Oct 2023 – Oct 2027 (Expected)</div>
+            <h3>Bachelor of Science – Computer Science</h3>
+            <p>Studying Computer Science with a focus on software engineering and artificial intelligence.</p>
+            <div class="org">IU International University of Applied Sciences, Germany</div>
+          </article>
+          <article class="card entry reveal" data-delay="1">
+            <div class="date"><svg class="icon"><use href="#i-cal"/></svg>2024</div>
+            <h3>UN Young Professional – Inclusive Value Chains</h3>
+            <p>Supported research, knowledge-sharing and community engagement aligned with the UN Sustainable Development Goals.</p>
+            <div class="org">United Nations Volunteers (UNV)</div>
+          </article>
+        </div>
+      </div>
+      <div>
+        <h3 class="col-title reveal">Experience</h3>
+        <div class="timeline">
+          <article class="card entry reveal">
+            <div class="date"><svg class="icon"><use href="#i-cal"/></svg>Jul 2026 – Present</div>
+            <h3>Software Engineering Intern</h3>
+            <p>Frontend development and AI-driven tooling on an agentic content engine and analytics platform, including SEO automation and LLM integrations.</p>
+            <div class="org">FlyRank · Remote</div>
+          </article>
+          <article class="card entry reveal" data-delay="1">
+            <div class="date"><svg class="icon"><use href="#i-cal"/></svg>2021 – Present</div>
+            <h3>Freelance Software Developer &amp; AI Automation Engineer</h3>
+            <p>50+ projects for global clients across SaaS, e-commerce and education: full-stack apps and AI automation pipelines, with consistent 5-star feedback.</p>
+            <div class="org">Upwork &amp; Fiverr · Remote</div>
+          </article>
+          <article class="card entry reveal" data-delay="2">
+            <div class="date"><svg class="icon"><use href="#i-cal"/></svg>2023 – Present</div>
+            <h3>Student Ambassador</h3>
+            <p>Represent the university globally, guide applicants through admission and enrolment, and build its online visibility through LinkedIn content.</p>
+            <div class="org">IU International University of Applied Sciences, Germany</div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technical skills -->
+    <div class="skills-wrap">
+      <h2 class="section-title reveal">Technical <strong>Skills</strong></h2>
+      <div class="skill-grid">
+        <div class="card skill reveal"><h3><span class="dot"></span>AI &amp; Agents</h3><ul class="chips"><li>Agentic AI</li><li>LLMs</li><li>RAG Pipelines</li><li>N8N Automation</li><li>Prompt Engineering</li><li>Pinecone</li><li>Machine Learning</li><li>Deep Learning</li><li>Keras</li></ul></div>
+        <div class="card skill reveal" data-delay="1"><h3><span class="dot"></span>Frontend</h3><ul class="chips"><li>React.js</li><li>Next.js</li><li>JavaScript</li><li>TypeScript</li><li>HTML5</li><li>CSS3</li><li>Tailwind CSS</li></ul></div>
+        <div class="card skill reveal" data-delay="2"><h3><span class="dot"></span>Backend</h3><ul class="chips"><li>Python</li><li>FastAPI</li><li>Node.js</li><li>NestJS</li><li>Express</li><li>REST APIs</li><li>JWT Auth</li></ul></div>
+        <div class="card skill reveal"><h3><span class="dot"></span>Databases</h3><ul class="chips"><li>PostgreSQL</li><li>Supabase</li><li>MySQL</li><li>Redis</li><li>MongoDB</li><li>SQL</li><li>Oracle</li></ul></div>
+        <div class="card skill reveal" data-delay="1"><h3><span class="dot"></span>Integrations</h3><ul class="chips"><li>CRM APIs</li><li>Payment Gateways</li><li>Stripe API</li><li>Gmail API</li><li>WhatsApp API</li><li>Analytics Tools</li></ul></div>
+        <div class="card skill reveal" data-delay="2"><h3><span class="dot"></span>Tools, DevOps &amp; Other</h3><ul class="chips"><li>Git</li><li>Docker</li><li>CI/CD</li><li>Figma</li><li>Unit Testing</li><li>End-to-End Testing</li><li>Technical Writing</li><li>Research &amp; Development</li><li>Data Cleaning</li><li>Business Analysis</li></ul></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== Certifications ====================== -->
+<section class="section alt" data-section="resume" style="padding-top:1rem">
+  <div class="container">
+    <h2 class="section-title reveal">Certifications</h2>
+    <div class="cert-grid" id="certGrid">
+      <article class="card cert reveal"><div class="ico"><svg class="icon"><use href="#i-medal"/></svg></div><div><span class="year">2026</span><h3>Business Analytics</h3><div class="issuer">Harvard Business School Online</div><div class="when">Mar 2026</div></div></article>
+      <article class="card cert reveal" data-delay="1"><div class="ico"><svg class="icon"><use href="#i-bookmark"/></svg></div><div><span class="year">2025</span><h3>Artificial Intelligence Concepts: An Introduction</h3><div class="issuer">University of Oxford</div><div class="when">Dec 2025</div></div></article>
+      <article class="card cert reveal" data-delay="2"><div class="ico"><svg class="icon"><use href="#i-medal"/></svg></div><div><span class="year">2025</span><h3>Google AI Essentials Specialization</h3><div class="issuer">Google</div><div class="when">Jun 2025</div></div></article>
+      <article class="card cert reveal"><div class="ico"><svg class="icon"><use href="#i-trophy"/></svg></div><div><span class="year">2025</span><h3>IBM AI Foundations for Business Specialization</h3><div class="issuer">IBM</div><div class="when">Jun 2025</div></div></article>
+      <article class="card cert reveal" data-delay="1"><div class="ico"><svg class="icon"><use href="#i-medal"/></svg></div><div><span class="year">2025</span><h3>Machine Learning with Python</h3><div class="issuer">IBM</div><div class="when">Jun 2025</div></div></article>
+      <article class="card cert reveal" data-delay="2"><div class="ico"><svg class="icon"><use href="#i-bookmark"/></svg></div><div><span class="year">2025</span><h3>Introduction to Deep Learning &amp; Neural Networks with Keras</h3><div class="issuer">IBM</div><div class="when">Jun 2025</div></div></article>
+      <article class="card cert" data-extra hidden><div class="ico"><svg class="icon"><use href="#i-trophy"/></svg></div><div><span class="year">2025</span><h3>Introduction to Artificial Intelligence (AI)</h3><div class="issuer">IBM</div><div class="when">Jun 2025</div></div></article>
+      <article class="card cert" data-extra hidden><div class="ico"><svg class="icon"><use href="#i-medal"/></svg></div><div><span class="year">2023</span><h3>Introduction to Generative AI</h3><div class="issuer">Google Cloud</div><div class="when">Sep 2023</div></div></article>
+      <article class="card cert" data-extra hidden><div class="ico"><svg class="icon"><use href="#i-bookmark"/></svg></div><div><span class="year">2023</span><h3>HTML, CSS, and JavaScript for Web Developers</h3><div class="issuer">Johns Hopkins University</div><div class="when">Sep 2023</div></div></article>
+      <article class="card cert" data-extra hidden><div class="ico"><svg class="icon"><use href="#i-medal"/></svg></div><div><span class="year">2023</span><h3>Digital Marketing Strategy</h3><div class="issuer">University of Edinburgh</div><div class="when">Sep 2023</div></div></article>
+    </div>
+    <div class="more-wrap reveal"><button type="button" class="btn btn-outline" id="certToggle" aria-expanded="false">Show All Certifications</button></div>
+  </div>
+</section>
+
+<!-- ====================== About ====================== -->
+<section class="section" id="about" data-section="about">
+  <div class="container about-grid">
+    <div class="about-panel reveal">
+      <div class="panel-label">At a glance</div>
+      <div class="panel-stats">
+        <div class="panel-stat"><b><span data-count="4">4</span><sup>+</sup></b><span>Years building software &amp; AI systems</span></div>
+        <div class="panel-stat"><b><span data-count="50">50</span><sup>+</sup></b><span>Freelance projects for global clients</span></div>
+        <div class="panel-stat"><b><span data-count="7">7</span></b><span>AI agents in one autonomous business system</span></div>
+        <div class="panel-stat"><b><span data-count="5">5</span><sup>★</sup></b><span>Consistent client feedback</span></div>
+      </div>
+      <div class="panel-foot">B.Sc. Computer Science · IU International University of Applied Sciences · Expected Oct 2027</div>
+    </div>
+    <div class="about-text reveal" data-delay="1">
+      <h2>About <strong>Me</strong></h2>
+      <p class="lead">I'm a software engineer and AI developer with 4+ years of hands-on experience building full-stack applications, agentic AI systems and automation pipelines for global clients.</p>
+      <p>I'm pursuing a B.Sc. in Computer Science at IU International University of Applied Sciences in Germany, and I believe technology should empower communities worldwide, which is why I take part in UN-affiliated volunteer work and international youth leadership.</p>
+      <div class="about-actions">
+        <a class="btn btn-primary" href="#contact">Hire Me</a>
+        <a class="btn btn-gray" href="assets/Habiba_Zahid_CV_2026.pdf" download>Download CV</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== Languages & interests ====================== -->
+<section class="section" data-section="about" style="padding-top:1rem">
+  <div class="container">
+    <h2 class="section-title reveal">Languages &amp; <strong>Interests</strong></h2>
+    <div class="bubble-grid">
+      <div class="bubble-item reveal">
+        <div class="avatar"><svg class="icon"><use href="#i-globe"/></svg></div>
+        <div class="card bubble"><p>English (Professional) · Urdu (Native) · German (Elementary A1–A2, currently learning)</p><p class="who">— Languages</p></div>
+      </div>
+      <div class="bubble-item reveal" data-delay="1">
+        <div class="avatar"><svg class="icon"><use href="#i-users"/></svg></div>
+        <div class="card bubble"><p>Youth diplomacy &amp; global governance · Sustainable development (SDGs)</p><p class="who">— Global Interests</p></div>
+      </div>
+      <div class="bubble-item reveal">
+        <div class="avatar"><svg class="icon"><use href="#i-spark"/></svg></div>
+        <div class="card bubble"><p>AI for social good · Cross-cultural collaboration</p><p class="who">— Technology with Purpose</p></div>
+      </div>
+      <div class="bubble-item reveal" data-delay="1">
+        <div class="avatar"><svg class="icon"><use href="#i-mic"/></svg></div>
+        <div class="card bubble"><p>Public speaking &amp; advocacy · International education &amp; youth empowerment</p><p class="who">— Leadership</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== Services ====================== -->
+<section class="section" data-section="about" style="padding-top:1rem">
+  <div class="container">
+    <h2 class="section-title reveal">What <strong>I Do</strong></h2>
+    <div class="service-grid">
+      <article class="card service reveal">
+        <div class="bubble-ico"><svg class="icon"><use href="#i-agent"/></svg></div>
+        <h3>AI Agents &amp; Automation</h3>
+        <p>Agentic AI systems and automation pipelines built with N8N, LLMs, RAG and third-party APIs, from design to deployment.</p>
+        <a class="more" href="#contact">Let's Talk <svg class="icon"><use href="#i-chev"/></svg></a>
+      </article>
+      <article class="card service reveal" data-delay="1">
+        <div class="bubble-ico"><svg class="icon"><use href="#i-window"/></svg></div>
+        <h3>Full-Stack Development</h3>
+        <p>End-to-end web applications with React, Python, FastAPI and Node.js, backed by PostgreSQL, Supabase and Redis.</p>
+        <a class="more" href="#contact">Let's Talk <svg class="icon"><use href="#i-chev"/></svg></a>
+      </article>
+      <article class="card service reveal" data-delay="2">
+        <div class="bubble-ico"><svg class="icon"><use href="#i-code"/></svg></div>
+        <h3>Frontend Development</h3>
+        <p>Responsive, polished interfaces using React, Next.js, TypeScript and Tailwind CSS.</p>
+        <a class="more" href="#contact">Let's Talk <svg class="icon"><use href="#i-chev"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== Contact ====================== -->
+<section class="section alt" id="contact" data-section="contact">
+  <div class="container">
+    <h2 class="section-title reveal">Get <strong>In Touch</strong></h2>
+    <div class="contact-grid">
+      <div class="reveal">
+        <h3>Get In Touch</h3>
+        <form id="contactForm" novalidate>
+          <label class="sr-only" for="cName">Your name</label>
+          <input class="field" id="cName" name="name" type="text" placeholder="Your Name" autocomplete="name" required>
+          <label class="sr-only" for="cEmail">Your email</label>
+          <input class="field" id="cEmail" name="email" type="email" placeholder="Your Email" autocomplete="email" required>
+          <label class="sr-only" for="cPhone">Your phone</label>
+          <input class="field" id="cPhone" name="phone" type="tel" placeholder="Your Phone" autocomplete="tel">
+          <label class="sr-only" for="cMsg">Message</label>
+          <textarea class="field" id="cMsg" name="message" placeholder="Write a Message" required></textarea>
+          <button class="btn btn-primary" type="submit" style="margin-top:.7rem">Send Message</button>
+          <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <div class="reveal" data-delay="1">
+        <h3>My Contact Details</h3>
+        <dl class="contact-list">
+          <dt>Email</dt><dd><a href="mailto:habibaazahid@gmail.com">habibaazahid@gmail.com</a></dd>
+          <dt>Phone</dt><dd><a href="tel:+923094062154">+92 309 4062154</a></dd>
+          <dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/habibazahid03" target="_blank" rel="noopener">linkedin.com/in/habibazahid03</a></dd>
+          <dt>GitHub</dt><dd><a href="https://github.com/habibaazahid" target="_blank" rel="noopener">github.com/habibaazahid</a></dd>
+          <dt>Location</dt><dd>Pakistan</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/habibazahid03" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon"><use href="#i-linkedin"/></svg></a>
+      <a href="https://github.com/habibaazahid" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon"><use href="#i-github"/></svg></a>
+      <a href="mailto:habibaazahid@gmail.com" aria-label="Email"><svg class="icon"><use href="#i-mail"/></svg></a>
+    </div>
+    <p>&copy; <span id="year">2026</span> Habiba Zahid. All rights reserved.</p>
+  </div>
+</footer>
+
+<button type="button" class="to-top" id="toTop" aria-label="Back to top"><svg class="icon"><use href="#i-chev"/></svg></button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
